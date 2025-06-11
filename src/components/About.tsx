@@ -29,7 +29,7 @@ const About: React.FC = () => {
 
   return (
     <section id="about" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}
           <div className="relative">
@@ -69,7 +69,7 @@ const About: React.FC = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-primary-800 mb-6">
                 About MKB Tours & Travel
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-600 leading-relaxed justify-normal mb-6">
                 With over 5 years of experience in the travel industry, MKB Tours & Travel has been creating 
                 unforgettable journeys for travelers across India. Based in Mumbai, we specialize in personalized 
                 travel experiences that showcase the incredible diversity and beauty of our nation.
