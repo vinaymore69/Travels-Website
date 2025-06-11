@@ -64,7 +64,7 @@ const Header: React.FC = () => {
               <MapPin className="w-6 h-6 text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-primary-800">श्री MKB Tours</span>
+              <span className="text-xl font-bold text-primary-800">MKB Tours</span>
               <span className="text-xs text-gold-600 font-medium">& Travel</span>
             </div>
           </div>
