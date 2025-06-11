@@ -18,9 +18,20 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
+    // Send to Formspree
+    try {
+      await fetch('https://formspree.io/f/xldnbjjk', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
+
+    // Simulate form submission feedback
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
@@ -76,7 +87,7 @@ const Contact: React.FC = () => {
             Plan Your Journey
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to explore India? Get in touch with us today and let's create an unforgettable travel experience together
+            Ready to explore India? Get in touch with us today and let&apos;s create an unforgettable travel experience together
           </p>
         </div>
 
@@ -89,7 +100,7 @@ const Contact: React.FC = () => {
               </h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Have questions about our services or want to plan a custom itinerary? 
-                We're here to help you every step of the way. Contact us through any of the following methods:
+                We&apos;re here to help you every step of the way. Contact us through any of the following methods:
               </p>
             </div>
 
@@ -159,7 +170,7 @@ const Contact: React.FC = () => {
                   Thank You!
                 </h4>
                 <p className="text-gray-600">
-                  Your message has been sent successfully. We'll get back to you within 24 hours.
+                  Your message has been sent successfully. We&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             ) : (
