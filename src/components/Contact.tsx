@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, title: 'Call Us', details: ['+91 84338 94555', '+91 86899 23413'], action: 'tel:+918433894555' },
+    { icon: Phone, title: 'Call Us', details: ['+91 84338 94555', '+91 86899 23413','+91 81698 20906'], action: 'tel:+918433894555' },
     { icon: Mail, title: 'Email Us', details: ['Shreemkb@gmail.com'], action: 'mailto:Shreemkb@gmail.com' },
     {
       icon: MapPin,
@@ -171,6 +171,13 @@ const Contact: React.FC = () => {
                 >
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">+91 86899 23413</span>
+                </a>
+                   <a
+                  href="tel:+918169820906"
+                  className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span className="font-medium">+91 81698 20906</span>
                 </a>
               </div>
             </div>
