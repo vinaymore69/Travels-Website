@@ -7,84 +7,84 @@ const Locations: React.FC = () => {
       name: 'Karjat',
       description: 'Scenic hill station perfect for weekend getaways',
       icon: Mountain,
-      image: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://www.sotc.in/blog/wp-content/uploads/2024/07/Karjat.jpg',
       highlights: ['Adventure Sports', 'River Rafting', 'Trekking']
     },
     {
       name: 'Lonavala',
       description: 'Famous for its scenic beauty and pleasant weather',
       icon: Mountain,
-      image: 'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lonavalamh.jpg/960px-Lonavalamh.jpg',
       highlights: ['Monsoon Beauty', 'Hill Stations', 'Photography']
     },
     {
       name: 'Mahabaleshwar',
       description: 'Queen of hill stations with strawberry farms',
       icon: TreePine,
-      image: 'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://media1.thrillophilia.com/filestore/2b4i148h5uixkfeaadlz7z1xzftm_Weekend%20Getaway%20to%20(2).jpg',
       highlights: ['Strawberry Gardens', 'Scenic Views', 'Cool Climate']
     },
     {
       name: 'All Gujarat',
       description: 'Vibrant culture and heritage destinations',
       icon: Building,
-      image: 'https://images.pexels.com/photos/3881104/pexels-photo-3881104.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://www.eyeonasia.gov.sg/images/india-selected/gujarat-profile.jpg',
       highlights: ['Cultural Heritage', 'Handicrafts', 'Festivals']
     },
     {
       name: 'All Goa',
       description: 'Beach paradise with Portuguese heritage',
       icon: Waves,
-      image: 'https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://www.thebluekite.com/ckfinder/userfiles/images/15%20Fun%20Things%20To%20Do%20In%20Palolem%20Beach%2C%20South%20Goa%20-%20Trot_World.jpg',
       highlights: ['Pristine Beaches', 'Nightlife', 'Water Sports']
     },
     {
       name: 'All Karnataka',
       description: 'Rich history and diverse landscapes',
       icon: Building,
-      image: 'https://images.pexels.com/photos/12935070/pexels-photo-12935070.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://mediaindia.eu/wp-content/uploads/2019/03/jog-falls.jpg',
       highlights: ['Historic Monuments', 'Gardens', 'Wildlife']
     },
     {
       name: 'Konkan Coast',
       description: 'Pristine beaches and coastal beauty',
       icon: Waves,
-      image: 'https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://www.trawell.in/images/tours/order/Ganpatipule.jpg',
       highlights: ['Coastal Cuisine', 'Beaches', 'Fishing Villages']
     },
     {
       name: 'Shirdi',
       description: 'Spiritual destination and pilgrimage site',
       icon: Star,
-      image: 'https://images.pexels.com/photos/7233360/pexels-photo-7233360.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://static2.tripoto.com/media/filter/tst/img/1405377/SpotDocument/1594537466_1594537460916.jpg.webp',
       highlights: ['Sai Baba Temple', 'Spiritual Journey', 'Peace']
     },
     {
       name: 'Trimbakeshwar',
       description: 'Sacred Jyotirlinga temple destination',
       icon: Star,
-      image: 'https://images.pexels.com/photos/4009506/pexels-photo-4009506.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://cdn-ildilbp.nitrocdn.com/ItjfTNOvdVfjFsBJGddyzxqohLDjxhvr/assets/images/optimized/rev-a6be9f4/halidays.in/wp-content/uploads/2023/09/Trimbakeshwar_Shiva_Temple_2005.jpg',
       highlights: ['Ancient Temple', 'Spiritual Experience', 'Rituals']
     },
     {
       name: 'Nashik',
       description: 'Wine capital and religious significance',
       icon: Mountain,
-      image: 'https://images.pexels.com/photos/3881104/pexels-photo-3881104.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2022/6/IR/FJ/RW/1460282/g0124045a.jpg',
       highlights: ['Wine Tours', 'Temples', 'Vineyards']
     },
     {
       name: 'Kolhapur',
       description: 'Royal heritage and cultural richness',
       icon: Building,
-      image: 'https://images.pexels.com/photos/8078361/pexels-photo-8078361.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://www.holidify.com/images/cmsuploads/compressed/attr_1125_20191224160810.jpg',
       highlights: ['Royal Palace', 'Cuisine', 'Wrestling']
     },
     {
       name: 'Pune',
       description: 'Cultural capital with modern amenities',
       icon: Building,
-      image: 'https://images.pexels.com/photos/1098515/pexels-photo-1098515.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://www.yukio.in/blog/wp-content/uploads/2025/04/Tallest-Buildings-in-Pune.jpg',
       highlights: ['IT Hub', 'Education', 'Cultural Sites']
     }
   ];
