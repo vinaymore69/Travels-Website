@@ -157,7 +157,7 @@ const Contact: React.FC = () => {
               <p className="text-white/90 text-sm mb-4">
                 For immediate assistance, call us directly:
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                 <a
                   href="tel:+918433894555"
                   className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
