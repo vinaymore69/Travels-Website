@@ -5,6 +5,7 @@ import Services from './components/Services';
 import Locations from './components/Locations';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
+import Terms from './components/Terms';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -29,6 +30,7 @@ function App() {
         <Locations />
         <About />
         <Testimonials />
+        <Terms />
         <Contact />
       </main>
       <Footer />
