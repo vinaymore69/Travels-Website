@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Users, Fuel, Gauge, Car, Shield, Zap } from 'lucide-react';
 
-interface CarProps {}
 
 const Cars: React.FC = () => {
   

@@ -9,6 +9,7 @@ const Contact: React.FC = () => {
     service: '',
     destination: '',
     customDestination: '',
+    car: '',
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -48,6 +49,7 @@ const Contact: React.FC = () => {
         phone: '',
         service: '',
         destination: '',
+        car: '',
         customDestination: '',
         message: ''
       });
@@ -94,6 +96,13 @@ const Contact: React.FC = () => {
     ],
     mumbaiDarshan: ['Full Day Mumbai Tour', 'Half Day Mumbai Tour', 'Bollywood Tour', 'Heritage Tour', 'Other']
   };
+
+    const carOptions = [
+    'Maruti Suzuki Ertiga - 7 Seater, Petrol/CNG, Manual/Automatic',
+    'Maruti Suzuki Dzire - 4+1 Seater, Petrol/CNG, Manual/Automatic',
+    'Maruti Suzuki WagonR - 4+1 Seater, Petrol/CNG, Manual/Automatic',
+    'Toyota Innova Crysta - 7-8 Seater, Diesel/Petrol, Manual/Automatic'
+  ];
 
   const currentDestinations =
     formData.service && destinations[formData.service]
@@ -298,6 +307,22 @@ const Contact: React.FC = () => {
                     />
                   </div>
                 )}
+
+
+                   <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Car</label>
+                  <select
+                    name="car"
+                    value={formData.car}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="">Select a car</option>
+                    {carOptions.map((car, idx) => (
+                      <option key={idx} value={car}>{car}</option>
+                    ))}
+                  </select>
+                </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
