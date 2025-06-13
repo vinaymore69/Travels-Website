@@ -107,7 +107,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div className={`md:hidden transition-all duration-300 ${
-        isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        isMenuOpen ? 'max-h-auto opacity-100' : 'max-h-0 opacity-0'
       } overflow-hidden bg-white shadow-lg`}>
         <nav className="px-4 py-4 space-y-4">
           {menuItems.map((item) => (

@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['Rushikesh: +91 84338 94555', 'Vikas: +91 81698 20906', 'Ramesh: +91 77000 38840', 'Sushant: +91 98706 87603','Raj: +91 70215 96018','Aniket: +91 86899 23413']
+      details: ['Rushikesh: +91 84338 94555', 'Vikas: +91 81698 20906', 'Ramesh: +91 77000 38840', 'Sushant: +91 98706 87603','Raj: +91 70215 96018','Aniket: +91 98336 13079']
     },
     {
       icon: Mail,
