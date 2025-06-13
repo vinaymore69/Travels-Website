@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Cars from './components/Cars';
+import Feedback from './components/Feedback';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Feedback />
         <Services />
         <Locations />
         <Cars />
