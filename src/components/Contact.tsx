@@ -55,15 +55,27 @@ const Contact: React.FC = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, title: 'Call Us', details: ['+91 84338 94555', '+91 86899 23413','+91 81698 20906','+91 77000 38840','+91 98706 87603'], action: 'tel:+918433894555' },
-    { icon: Mail, title: 'Email Us', details: ['Shreemkb@gmail.com'], action: 'mailto:Shreemkb@gmail.com' },
+    {
+      icon: Phone,
+      title: 'Call Us',
+      details: ['Rushikesh: +91 84338 94555', 'Vikas: +91 81698 20906', 'Ramyaa: +91 77000 38840', 'Sushant: +91 98706 87603','Raj: +91 70215 96018','+91 86899 23413']
+    },
+    {
+      icon: Mail,
+      title: 'Email Us',
+      details: ['Shreemkb@gmail.com']
+    },
     {
       icon: MapPin,
       title: 'Visit Us',
       details: ['Anusaya Niwas, Malpa Dongri No. 3', 'Andheri East, Mumbai 400093'],
       action: 'https://www.google.com/maps?q=19.123648014425907,72.85629310637911'
     },
-    { icon: Clock, title: 'Business Hours', details: ['Mon - Sun: 24/7', 'Emergency Support Available'], action: null }
+    {
+      icon: Clock,
+      title: 'Business Hours',
+      details: ['Mon - Sun: 24/7', 'Emergency Support Available']
+    }
   ];
 
   const services = [
@@ -91,7 +103,6 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
             Plan Your Journey
@@ -102,7 +113,6 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left Column: Contact Info and Map */}
           <div className="space-y-8">
             {contactInfo.map((info, idx) => (
               <div
@@ -116,15 +126,29 @@ const Contact: React.FC = () => {
                   <h4 className="font-semibold text-blue-800 mb-2">{info.title}</h4>
                   {info.details.map((detail, di) => (
                     <p key={di} className="text-gray-600 text-sm mb-1">
-                      {info.action && di === 0 ? (
+                      {info.title === 'Call Us' ? (
                         <a
-                          href={info.action}
-                          target={info.action.includes('maps') ? '_blank' : '_self'}
-                          rel={info.action.includes('maps') ? 'noopener noreferrer' : undefined}
+                          href={`tel:${detail.replace(/\s+/g, '')}`}
                           className="hover:text-blue-800 transition-colors flex items-center space-x-1"
                         >
                           <span>{detail}</span>
-                          {info.action.includes('maps') && <ExternalLink className="w-3 h-3" />}
+                        </a>
+                      ) : info.title === 'Email Us' ? (
+                        <a
+                          href={`mailto:${detail}`}
+                          className="hover:text-blue-800 transition-colors flex items-center space-x-1"
+                        >
+                          <span>{detail}</span>
+                        </a>
+                      ) : info.title === 'Visit Us' && info.action ? (
+                        <a
+                          href={info.action}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-blue-800 transition-colors flex items-center space-x-1"
+                        >
+                          <span>{detail}</span>
+                          <ExternalLink className="w-3 h-3" />
                         </a>
                       ) : (
                         detail
@@ -149,7 +173,6 @@ const Contact: React.FC = () => {
                   title="MKB Tours & Travel Location"
                 />
               </div>
-
             </div>
 
             <div className="bg-gradient-to-r from-primary-800 to-gold-600 rounded-2xl p-6 text-white">
@@ -158,46 +181,20 @@ const Contact: React.FC = () => {
                 For immediate assistance, call us directly:
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                <a
-                  href="tel:+918433894555"
-                  className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span className="font-medium">+91 84338 94555</span>
-                </a>
-                <a
-                  href="tel:+918689923413"
-                  className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span className="font-medium">+91 86899 23413</span>
-                </a>
-                   <a
-                  href="tel:+918169820906"
-                  className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span className="font-medium">+91 81698 20906</span>
-                </a>
+                {contactInfo[0].details.map((num, i) => (
                   <a
-                  href="tel:+917700038840"
-                  className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span className="font-medium">+91 77000 38840</span>
-                </a>
-                  <a
-                  href="tel:+919870687603"
-                  className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span className="font-medium">+91 98706 87603</span>
-                </a>
+                    key={i}
+                    href={`tel:${num.replace(/\s+/g, '')}`}
+                    className="flex items-center justify-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-colors"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span className="font-medium">{num}</span>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Right Column: Contact Form */}
           <div className="bg-white rounded-3xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-blue-800 mb-6">Send Us a Message</h3>
 
@@ -205,13 +202,16 @@ const Contact: React.FC = () => {
               <div className="text-center py-8">
                 <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-blue-800 mb-2">Thank You!</h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 mb-2">
                   Your message has been sent successfully. We'll get back to you within 24 hours.
+                </p>
+                <p className="text-blue-800 font-medium">
+                  Name: {formData.name} <br />
+                  Phone: {formData.phone}
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Fields */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
