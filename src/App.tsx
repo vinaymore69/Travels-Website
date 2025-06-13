@@ -9,6 +9,7 @@ import Terms from './components/Terms';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Cars from './components/Cars';
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
         <Hero />
         <Services />
         <Locations />
+        <Cars />
         <About />
         <Testimonials />
         <Terms />
