@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Heart } from 'lucide-react';
+import VisitorStats from './VisitorStats';
 
 const Footer: React.FC = () => {
   const quickLinks = [
@@ -145,6 +146,13 @@ const Footer: React.FC = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Visitor Statistics */}
+        <div className="mt-12 flex justify-center">
+          <div className="w-full max-w-md">
+            <VisitorStats />
           </div>
         </div>
 
