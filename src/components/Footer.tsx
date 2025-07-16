@@ -6,6 +6,7 @@ const Footer: React.FC = () => {
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
     { name: 'Locations', href: '#locations' },
+    { name: 'Download Guide', href: '#booklet' },
     { name: 'About Us', href: '#about' },
     { name: 'Contact', href: '#contact' }
   ];

@@ -86,8 +86,14 @@ const Hero: React.FC = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
-              onClick={scrollToServices}
+              onClick={() => document.getElementById('booklet')?.scrollIntoView({ behavior: 'smooth' })}
               className="group bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 border border-white/30 hover:border-white/50"
+            >
+              Download Guide
+            </button>
+            <button
+              onClick={scrollToServices}
+              className="group bg-transparent border-2 border-white/50 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
             >
               Explore Services
             </button>

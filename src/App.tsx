@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Cars from './components/Cars';
 import Feedback from './components/Feedback';
+import BookletDownload from './components/BookletDownload';
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
         <Cars />
         <About />
         <Testimonials />
+        <BookletDownload />
         <Terms />
         <Contact />
       </main>
