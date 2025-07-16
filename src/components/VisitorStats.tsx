@@ -35,7 +35,7 @@ const VisitorStats: React.FC = () => {
           <h3 className="text-lg font-bold text-primary-800 flex items-center">
             <Eye className="w-5 h-5 mr-2 text-gold-500" />
             Website Statistics
-          </button>
+          </h3>
         </div>
 
         <div className="grid grid-cols-2 gap-4">
