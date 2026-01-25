@@ -62,7 +62,7 @@ export function ArticleHero({ image, alt, className = "" }: ArticleHeroProps) {
         <img
           src={image}
           alt={alt}
-          className="top-0 left-0 max-w-full w-full aspect-[2/1] xl:aspect-[16/5] object-cover"
+          className="top-0 left-0 max-w-full w-full aspect-[2/1] xl:aspect-[16/9] object-cover"
         />
       </picture>
     </figure>

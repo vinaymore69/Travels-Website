@@ -88,7 +88,7 @@ const Footer = () => {
                 Terms & Conditions
               </Link>
               <p className="text-[1.4rem] text-muted-foreground">
-                © Editorial 2025
+                © Shree MKB Tours & Travels 2025
               </p>
             </nav>
 
@@ -111,7 +111,7 @@ const Footer = () => {
                 Twitter
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/carwale_marathi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"

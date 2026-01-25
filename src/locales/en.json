@@ -1,0 +1,252 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "footer": {
+    "description": "Your trusted partner for memorable journeys across India. We specialize in personalized tours, ensuring comfort and unforgettable experiences.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "legalLinks": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "followUs": "Follow Us",
+    "copyright": "© 2026 MKB Tours & Travel. All rights reserved."
+  },
+  "about": {
+    "title": "About",
+    "heroAlt": "Editorial Team",
+    "storyTitle": "Our Story",
+    "storyPara1": "MKB Tours & Travel was founded with a vision to make every journey comfortable, safe, and memorable. Based in Mumbai, we have been serving travelers across India for over 5 years with reliable transportation and customized tour packages.",
+    "storyPara2": "From hill stations and beach holidays to spiritual pilgrimages and heritage tours, we design each trip with personal care, professional drivers, and well-maintained vehicles to ensure a smooth travel experience.",
+    "storyPara3": "Today, MKB Tours & Travel is trusted by 1000+ happy travelers, offering door-to-door pickup, flexible itineraries, 24/7 support, and premium service across Maharashtra, Goa, Gujarat, Karnataka, and beyond.",
+    "missionQuote": "Safe Journeys. Trusted Service. Memorable Experiences.",
+    "missionCaption": "Our Mission",
+    "valuesTitle": "Our Values",
+    "passionTitle": "Passion for Travel",
+    "passionDesc": "We love what we do, and it reflects in the care and attention we give to every journey we craft.",
+    "excellenceTitle": "Service Excellence",
+    "excellenceDesc": "From clean vehicles to professional drivers and well-planned itineraries, we deliver premium travel experiences.",
+    "customerTitle": "Customer First",
+    "customerDesc": "Your comfort, safety, and satisfaction are our highest priorities on every journey.",
+    "safetyTitle": "Safety & Trust",
+    "safetyDesc": "Verified drivers, well-maintained vehicles, and transparent pricing ensure a worry-free travel experience."
+  },
+  "contact": {
+    "emoji": "✉️",
+    "title": "We'd love to hear from you.",
+    "subtitle": "Have a question, suggestion, or collaboration idea? We're here to listen. Drop us a message and we'll get back to you as soon as possible.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message",
+    "required": "(required)",
+    "send": "Send",
+    "sending": "Sending...",
+    "firstNamePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Message",
+    "toastTitle": "Message sent!",
+    "toastDescription": "We'll get back to you as soon as possible."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Premium Travel Solutions",
+    "description": "Experience hassle-free travel with our comprehensive range of services designed to make every journey unforgettable",
+    "localRental": {
+      "title": "Local Rental",
+      "subtitle": "City Travel Made Easy",
+      "description": "Professional chauffeur services for seamless local travel within the city with experienced drivers.",
+      "feature1": "Experienced Drivers",
+      "feature2": "Hourly/Daily Rates",
+      "feature3": "Expert Navigation"
+    },
+    "airportTransfer": {
+      "title": "Airport Transfer",
+      "subtitle": "Hassle-Free Pickups",
+      "description": "Reliable pickup and drop services to and from airports with real-time flight tracking.",
+      "feature1": "Flight Tracking",
+      "feature2": "Meet & Greet",
+      "feature3": "Luggage Assistance"
+    },
+    "outstationTravel": {
+      "title": "Outstation Travel",
+      "subtitle": "Long Distance Comfort",
+      "description": "Comfortable long-distance journeys to destinations across India with flexible packages.",
+      "feature1": "One Way & Round Trip",
+      "feature2": "Multi-City Tours",
+      "feature3": "Flexible Itinerary"
+    },
+    "mumbaiDarshan": {
+      "title": "Mumbai Darshan",
+      "subtitle": "City Exploration",
+      "description": "Complete sightseeing tours of Mumbai covering all major attractions and landmarks.",
+      "feature1": "Famous Landmarks",
+      "feature2": "Expert Guide",
+      "feature3": "Photo Opportunities"
+    },
+    "learnMore": "Learn More",
+    "whyChooseTitle": "Why Choose MKB Tours & Travel?",
+    "professionalTitle": "Professional Service",
+    "professionalDesc": "Verified drivers, well-maintained vehicles, and exceptional customer care on every journey.",
+    "flexibleTitle": "Flexible Packages",
+    "flexibleDesc": "Customized itineraries and flexible booking options to suit your travel needs and schedule.",
+    "supportTitle": "24/7 Support",
+    "supportDesc": "Round-the-clock customer support to assist you before, during, and after your trip.",
+    "pricingTitle": "Transparent Pricing",
+    "pricingDesc": "No hidden charges. Clear pricing with detailed breakdowns for complete peace of mind.",
+    "ctaTitle": "Ready to Start Your Journey?",
+    "ctaSubtitle": "Contact us today to book your next trip or get a custom quote",
+    "ctaButton": "Get in Touch"
+  },
+  "blog": {
+    "featuredTitle": "Discover India with Memorable Journeys",
+    "featuredDesc": "Explore breathtaking destinations with our private tours, door-to-door pickup & drop, and fully customized travel packages designed for comfort and unforgettable experiences.",
+    "opinionsTitle": "Opinions",
+    "destinationsTitle": "Destinations We Serve",
+    "filterAll": "All",
+    "filterHills": "Hills & Getaways",
+    "filterSpiritual": "Spiritual Tours",
+    "filterBeach": "Beach Holidays",
+    "filterHeritage": "Heritage Trails",
+    "filterAdventure": "Adventure Tours",
+    "articles": {
+      "hills": {
+        "title": "Hills & Scenic Getaways",
+        "desc": "Refreshing hill stations and nature escapes for peaceful weekends."
+      },
+      "spiritual": {
+        "title": "Spiritual Tours",
+        "desc": "Sacred temples and pilgrimage destinations for a soulful journey."
+      },
+      "beach": {
+        "title": "Beach Holidays",
+        "desc": "Relax on pristine beaches with coastal beauty and water activities."
+      },
+      "heritage": {
+        "title": "Heritage Trails",
+        "desc": "Explore royal palaces, forts, and rich cultural history of India."
+      },
+      "adventure": {
+        "title": "Adventure Tours",
+        "desc": "Thrilling treks, wildlife safaris, and exciting outdoor experiences."
+      },
+      "discover": {
+        "title": "Discover India: Customized Private Tours",
+        "desc": "Personalized travel experiences across India's diverse destinations."
+      }
+    },
+    "opinions": {
+      "family": "A Perfect Family Vacation Experience",
+      "pilgrimage": "Comfortable and Well-Planned Pilgrimage",
+      "hillStation": "Best Hill Station Trip Ever",
+      "service": "Safe, Reliable & On-Time Service"
+    },
+    "destinations": {
+      "matheran": {
+        "title": "Matheran Hill Escape",
+        "desc": "Peaceful hill station with toy train, viewpoints and zero-pollution zone."
+      },
+      "mahabaleshwar": {
+        "title": "Mahabaleshwar Strawberry Trails",
+        "desc": "Cool climate, scenic valleys and fresh strawberry farms."
+      },
+      "shirdi": {
+        "title": "Shirdi Sai Darshan",
+        "desc": "Comfortable pilgrimage tour to Sai Baba temple with VIP darshan."
+      },
+      "trimbakeshwar": {
+        "title": "Trimbakeshwar Jyotirlinga Yatra",
+        "desc": "Sacred temple visit with rituals and spiritual guidance."
+      },
+      "goa": {
+        "title": "Goa Beach Holiday",
+        "desc": "Golden beaches, water sports and nightlife experience."
+      },
+      "konkan": {
+        "title": "Konkan Coastal Retreat",
+        "desc": "Pristine beaches, seafood and scenic coastal drives."
+      },
+      "ajanta": {
+        "title": "Ajanta Ellora Heritage Tour",
+        "desc": "World heritage caves with ancient art and architecture."
+      },
+      "kolhapur": {
+        "title": "Kolhapur Royal Heritage",
+        "desc": "Palaces, temples and cultural traditions of Maharashtra royalty."
+      },
+      "rajmachi": {
+        "title": "Rajmachi Fort Trek",
+        "desc": "Monsoon trekking adventure with waterfalls and camping."
+      },
+      "kalsubai": {
+        "title": "Kalsubai Peak Expedition",
+        "desc": "Climb the highest peak of Maharashtra for breathtaking views."
+      },
+      "bhandardara": {
+        "title": "Bhandardara Nature Camp",
+        "desc": "Lakes, waterfalls and star-gazing in serene surroundings."
+      },
+      "pandharpur": {
+        "title": "Pandharpur Wari Yatra",
+        "desc": "Spiritual journey to Vitthal Rukmini temple."
+      },
+      "tarkarli": {
+        "title": "Tarkarli Scuba Experience",
+        "desc": "Crystal clear waters and water sports in Konkan."
+      },
+      "raigad": {
+        "title": "Raigad Fort History Walk",
+        "desc": "Explore the capital of Chhatrapati Shivaji Maharaj."
+      },
+      "harishchandragad": {
+        "title": "Harishchandragad Night Trek",
+        "desc": "Thrilling night trek with cliff views and camping."
+      }
+    }
+  },
+  "article": {
+    "author": {
+      "travelWriter": "Travel Writer",
+      "heritageExpert": "Heritage Expert",
+      "adventureGuide": "Adventure Guide",
+      "spiritualTourGuide": "Spiritual Tour Guide"
+    },
+    "readMore": "Read Full Article",
+    "headings": {
+      "bestTime": "Best Time to Visit",
+      "howToReach": "How to Reach",
+      "accommodation": "Accommodation Options",
+      "activities": "Activities & Experiences",
+      "foodCuisine": "Local Food & Cuisine",
+      "thingsToDo": "Things to Do",
+      "attractions": "Main Attractions",
+      "history": "Historical Background",
+      "culture": "Cultural Significance",
+      "wildlife": "Wildlife & Nature",
+      "adventure": "Adventure Activities",
+      "safety": "Safety & Guidelines",
+      "tips": "Travel Tips",
+      "conclusion": "Planning Your Visit",
+      "highlights": "Key Highlights",
+      "accessibility": "How to Get There"
+    },
+    "common": {
+      "duration": "Duration",
+      "difficulty": "Difficulty Level",
+      "season": "Best Season",
+      "entry": "Entry Fee",
+      "timings": "Visiting Hours",
+      "location": "Location",
+      "distance": "Distance from",
+      "contact": "Contact Information"
+    }
+  }
+}

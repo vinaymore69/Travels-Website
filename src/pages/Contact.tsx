@@ -4,9 +4,11 @@ import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import AppearOnScroll from "@/components/AppearOnScroll";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -23,8 +25,8 @@ const Contact = () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
+      title: t("contact.toastTitle"),
+      description: t("contact.toastDescription"),
     });
 
     // Reset form
@@ -52,29 +54,46 @@ const Contact = () => {
             {/* Left Column - Info */}
             <div className="w-full lg:w-1/2 py-[3rem] md:py-[5rem] lg:py-[8rem]">
               <AppearOnScroll delay={0}>
-                <div className="text-[56px] mb-6">✉️</div>
+                <div className="text-[56px] mb-6">{t("contact.emoji")}</div>
               </AppearOnScroll>
               <AppearOnScroll delay={100}>
                 <h1 className="text-[3.4rem] md:text-[4.2rem] lg:text-[5rem] font-semibold tracking-[-0.01em] leading-[1.2] mb-[3rem]">
-                  We'd love to hear from you.
+                  {t("contact.title")}
                 </h1>
               </AppearOnScroll>
               <AppearOnScroll delay={200}>
                 <p className="text-[1.8rem] leading-[1.8] text-muted-foreground mb-[4rem]">
-                  Have a question, suggestion, or collaboration idea? We're here to listen. Drop us a message and we'll get back to you as soon as possible.
+                  {t("contact.subtitle")}
                 </p>
               </AppearOnScroll>
 
               <AppearOnScroll delay={300}>
                 <div className="space-y-3 mb-8">
                   <p className="text-[1.8rem]">
-                    <a href="mailto:hello@editorial.com" className="hover:opacity-60 transition-opacity">
-                      hello@editorial.com
+                    <a href="mailto:Shreemkb@gmail.com" className="hover:opacity-60 transition-opacity">
+                      
+Shreemkb@gmail.com
                     </a>
                   </p>
                   <p className="text-[1.8rem]">
-                    <a href="tel:+15555555555" className="hover:opacity-60 transition-opacity">
-                      (555) 555-5555
+                    <a href="tel:+918433894555" className="hover:opacity-60 transition-opacity">
+                      Rushikesh: +91 84338 94555
+                    </a>
+                    <br/>
+                     <a href="tel:+918169820906" className="hover:opacity-60 transition-opacity">
+                      Vikas:+91 81698 20906
+                    </a><br/>
+                     <a href="tel:+917700038840" className="hover:opacity-60 transition-opacity">
+                      Ramesh:+91 77000 38840
+                    </a><br/>
+                     <a href="tel:+919870687603" className="hover:opacity-60 transition-opacity">
+                      Sushant: +91 98706 87603
+                    </a><br/>
+                     <a href="tel:+917021596018" className="hover:opacity-60 transition-opacity">
+                      Raj: +91 70215 96018
+                    </a><br/>
+                       <a href="tel:+919833613079" className="hover:opacity-60 transition-opacity">
+                      Aniket: +91 98336 13079
                     </a>
                   </p>
                 </div>
@@ -94,7 +113,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/carwale_marathi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center hover:opacity-60 transition-opacity"
@@ -126,7 +145,7 @@ const Contact = () => {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-[1.6rem] mb-2">
-                        First Name <span className="text-muted-foreground">(required)</span>
+                        {t("contact.firstName")} <span className="text-muted-foreground">{t("contact.required")}</span>
                       </label>
                       <input
                         id="firstName"
@@ -136,11 +155,11 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground"
-                        placeholder="First Name"
+                        placeholder={t("contact.firstNamePlaceholder")}
                       />
                     </div>
                     <div>
-                      <label className="block text-[1.6rem] mb-2">Last Name</label>
+                      <label className="block text-[1.6rem] mb-2">{t("contact.lastName")}</label>
                       <input
                         id="lastName"
                         name="lastName"
@@ -148,7 +167,7 @@ const Contact = () => {
                         value={formData.lastName}
                         onChange={handleChange}
                         className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground"
-                        placeholder="Last Name"
+                        placeholder={t("contact.lastNamePlaceholder")}
                       />
                     </div>
                   </div>
@@ -157,7 +176,7 @@ const Contact = () => {
                 <AppearOnScroll delay={150}>
                   <div>
                     <label className="block text-[1.6rem] mb-2">
-                      Email <span className="text-muted-foreground">(required)</span>
+                      {t("contact.email")} <span className="text-muted-foreground">{t("contact.required")}</span>
                     </label>
                     <input
                       id="email"
@@ -167,7 +186,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full text-[1.8rem] leading-[2.4rem] h-[60px] px-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground"
-                      placeholder="Email"
+                      placeholder={t("contact.emailPlaceholder")}
                     />
                   </div>
                 </AppearOnScroll>
@@ -175,7 +194,7 @@ const Contact = () => {
                 <AppearOnScroll delay={300}>
                   <div>
                     <label className="block text-[1.6rem] mb-2">
-                      Message <span className="text-muted-foreground">(required)</span>
+                      {t("contact.message")} <span className="text-muted-foreground">{t("contact.required")}</span>
                     </label>
                     <textarea
                       id="message"
@@ -185,7 +204,7 @@ const Contact = () => {
                       required
                       rows={8}
                       className="w-full text-[1.8rem] leading-[2.4rem] p-4 bg-white dark:bg-background border border-[#d7d7db] dark:border-border rounded-lg focus:outline-none focus:border-[#CB30DF] focus:ring-2 focus:ring-[rgba(203,48,223,0.2)] transition-all placeholder:text-muted-foreground resize-y"
-                      placeholder="Message"
+                      placeholder={t("contact.messagePlaceholder")}
                     />
                   </div>
                 </AppearOnScroll>
@@ -196,7 +215,7 @@ const Contact = () => {
                     disabled={isSubmitting}
                     className="text-[1.8rem] font-medium h-[60px] px-12 bg-[rgba(203,48,223,0.9)] text-white rounded-lg hover:bg-[rgba(203,48,223,1)] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSubmitting ? "Sending..." : "Send"}
+                    {isSubmitting ? t("contact.sending") : t("contact.send")}
                   </button>
                 </AppearOnScroll>
               </form>

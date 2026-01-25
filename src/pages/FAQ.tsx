@@ -9,68 +9,69 @@ import {
 } from "@/components/ui/accordion";
 
 const FAQ = () => {
-  const faqs = [
-    {
-      question: "What is Editorial?",
-      answer:
-        "Editorial is a design-forward content platform where creators share stories, photography, and perspectives. We combine editorial excellence with beautiful design to create an engaging reading experience.",
-    },
-    {
-      question: "How can I contribute to Editorial?",
-      answer:
-        "We're always looking for talented writers, photographers, and designers. Reach out through our Contact page with samples of your work and a brief introduction. We review all submissions and respond within 7-10 business days.",
-    },
-    {
-      question: "Is Editorial free to read?",
-      answer:
-        "Yes! All content on Editorial is free to read. We believe great stories should be accessible to everyone. We're exploring sustainable models that keep content free while supporting our creators.",
-    },
-    {
-      question: "Can I republish content from Editorial?",
-      answer:
-        "Content rights belong to individual creators. If you'd like to republish or reference an article, please reach out to us with details about your intended use, and we'll connect you with the original author.",
-    },
-    {
-      question: "How often do you publish new content?",
-      answer:
-        "We publish new articles 3-4 times per week. Quality over quantity is our mantra—each piece goes through a thorough editorial and design review before publication.",
-    },
-    {
-      question: "Do you accept sponsored content or advertising?",
-      answer:
-        "We occasionally feature sponsored content that aligns with our values and standards. All sponsored pieces are clearly labeled. We don't accept banner ads or intrusive advertising formats.",
-    },
-    {
-      question: "How do I subscribe to updates?",
-      answer:
-        "While we're building our newsletter feature, you can follow us on Twitter for regular updates. We announce new articles, featured photographers, and community highlights there.",
-    },
-    {
-      question: "What's your editorial process?",
-      answer:
-        "Each submission goes through a multi-stage review: initial screening, editorial feedback, design integration, and final approval. We work closely with contributors to ensure their vision is preserved while maintaining our quality standards.",
-    },
-    {
-      question: "Can I suggest a topic or story idea?",
-      answer:
-        "Absolutely! We love hearing ideas from our community. Send your pitch through our Contact page with a brief outline. We review all suggestions and respond to those that fit our editorial direction.",
-    },
-    {
-      question: "How do you choose featured articles?",
-      answer:
-        "Featured articles are selected based on editorial quality, visual impact, timeliness, and community engagement. We aim to showcase diverse voices and perspectives across different content categories.",
-    },
-    {
-      question: "Is there a mobile app?",
-      answer:
-        "Not yet, but our website is fully responsive and optimized for mobile reading. A native app is on our roadmap for 2025 as we continue to improve the reading experience.",
-    },
-    {
-      question: "How can I report an issue or bug?",
-      answer:
-        "Please use our Contact page to report any technical issues, broken links, or concerns. Include details about your device, browser, and the specific problem you encountered. We investigate all reports promptly.",
-    },
-  ];
+const faqs = [
+  {
+    question: "What is MKB Tours & Travel?",
+    answer:
+      "MKB Tours & Travel is a Mumbai-based travel company providing reliable cab services and customized tour packages across India, including hill stations, pilgrimage tours, beach holidays, and heritage trips.",
+  },
+  {
+    question: "What services do you offer?",
+    answer:
+      "We offer local rentals, airport transfers, outstation one-way and round trips, Mumbai Darshan, pilgrimage tours, and customized holiday packages with professional drivers and well-maintained vehicles.",
+  },
+  {
+    question: "Do you provide pickup and drop services?",
+    answer:
+      "Yes, we provide door-to-door pickup and drop services for all our local, outstation, airport, and tour packages.",
+  },
+  {
+    question: "Can I customize my travel itinerary?",
+    answer:
+      "Absolutely. We offer fully customizable travel packages based on your preferred destinations, travel dates, vehicle type, and budget.",
+  },
+  {
+    question: "What types of vehicles are available?",
+    answer:
+      "Our fleet includes Maruti Dzire, WagonR, Ertiga, Innova Crysta, and other comfortable vehicles suitable for individuals, families, and groups.",
+  },
+  {
+    question: "Are your drivers experienced and verified?",
+    answer:
+      "Yes, all our drivers are professionally trained, background-verified, and experienced in long-distance and city travel to ensure safety and comfort.",
+  },
+  {
+    question: "Do you provide 24/7 customer support?",
+    answer:
+      "Yes, our support team is available 24/7 to assist you with bookings, trip modifications, and emergency help during your journey.",
+  },
+  {
+    question: "Do you organize pilgrimage tours?",
+    answer:
+      "Yes, we specialize in pilgrimage tours to destinations such as Shirdi, Trimbakeshwar, Pandharpur, Bhimashankar, Shani Shingnapur, and other sacred places across Maharashtra and India.",
+  },
+  {
+    question: "Is advance booking required?",
+    answer:
+      "Advance booking is recommended, especially during weekends, holidays, and festival seasons, to ensure vehicle availability and best service.",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer:
+      "We accept UPI, cash, and bank transfers. For corporate and long-distance bookings, advance payment may be required.",
+  },
+  {
+    question: "Do you provide GST invoices?",
+    answer:
+      "Yes, GST invoices are available on request. A 5% GST is applicable for GST billing as per government norms.",
+  },
+  {
+    question: "How can I contact MKB Tours & Travel?",
+    answer:
+      "You can call us at +91 84338 94555 or email us at Shreemkb@gmail.com for bookings, queries, and support.",
+  },
+];
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -83,7 +84,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-[1.8rem] md:text-[2rem] text-muted-foreground leading-[1.8]">
-            Everything you need to know about Editorial and how it works.
+            Everything you need to know about Shree MKB Tours & Travel and how it works.
           </p>
         </div>
       </Section>
