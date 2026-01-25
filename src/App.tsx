@@ -8,6 +8,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import ScrollToTop from "@/components/ScrollToTop";
 import Preloader from "@/components/Preloader";
 import FloatingLanguageSelector from "@/components/FloatingLanguageSelector";
+import FontProvider from "@/components/FontProvider";
 import Blog from "./pages/Blog";
 import Article from "./pages/Article";
 import About from "./pages/About";
@@ -24,10 +25,11 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider defaultTheme="system" storageKey="editorial-theme">
       <LanguageProvider>
-        <TooltipProvider>
-          <Preloader />
-          <Toaster />
-          <Sonner />
+        <FontProvider>
+          <TooltipProvider>
+            <Preloader />
+            <Toaster />
+            <Sonner />
           <BrowserRouter>
           <ScrollToTop />
           <FloatingLanguageSelector />
@@ -47,6 +49,7 @@ const App = () => (
         </BrowserRouter>
 
       </TooltipProvider>
+        </FontProvider>
             </LanguageProvider>
     </ThemeProvider>
   </QueryClientProvider>

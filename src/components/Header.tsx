@@ -6,6 +6,7 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetTitle,
 } from "@/components/ui/sheet";
 
 const Header = () => {
@@ -31,7 +32,7 @@ const Header = () => {
       <div className="h-full px-6 md:px-[calc(18vw-10rem)]">
         <div className="flex items-center justify-between h-full max-w-[138rem] mx-auto">
           <Link to="/" className="font-sans text-[21px] font-bold text-foreground">
-            Shree  MKB Tours & Travels
+            {t("header.companyName")}
           </Link>
 
           {/* Menu Button */}
@@ -41,7 +42,7 @@ const Header = () => {
                   className="flex items-center gap-2 p-2 text-foreground hover:text-muted-foreground transition-colors"
                   aria-label="Open menu"
                 >
-                  <span className="text-[21px] font-medium leading-none">Menu</span>
+                  <span className="text-[21px] font-medium leading-none">{t("header.menu")}</span>
                   <div className="w-12 flex flex-col gap-[7px] items-center justify-center mt-[5px]">
                     <span className="w-[20px] h-[2px] bg-current block"></span>
                     <span className="w-[20px] h-[2px] bg-current block"></span>
@@ -52,11 +53,16 @@ const Header = () => {
                 side="right"
                 className="w-full sm:w-[400px] p-0 flex flex-col h-full bg-white dark:bg-black"
               >
+                {/* Visually hidden title for accessibility */}
+                <SheetTitle className="sr-only">
+                  {t("header.menu")}
+                </SheetTitle>
+                
                 {/* Header with Close */}
                 <div className="flex items-center justify-end px-6 md:px-[9.09091vw] lg:px-52 py-6">
                   <SheetClose asChild>
                     <button className="text-[1.6rem] text-black dark:text-white hover:opacity-60 transition-opacity">
-                      Close
+                      {t("header.close")}
                     </button>
                   </SheetClose>
                 </div>
@@ -138,7 +144,7 @@ const Header = () => {
                             animationFillMode: "backwards",
                           }}
                         >
-                          Email
+                          {t("header.email")}
                         </a>
                       </li>
                       <li>
@@ -152,7 +158,7 @@ const Header = () => {
                             animationFillMode: "backwards",
                           }}
                         >
-                          Facebook
+                          {t("header.facebook")}
                         </a>
                       </li>
                       <li>
@@ -166,7 +172,7 @@ const Header = () => {
                             animationFillMode: "backwards",
                           }}
                         >
-                          Instagram
+                          {t("header.instagram")}
                         </a>
                       </li>
                       <li>
@@ -180,7 +186,7 @@ const Header = () => {
                             animationFillMode: "backwards",
                           }}
                         >
-                          Twitter
+                          {t("header.twitter")}
                         </a>
                       </li>
                     </ul>

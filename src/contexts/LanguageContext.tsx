@@ -9,6 +9,7 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  getFontClass: () => string;
 }
 
 const translations = {
@@ -33,6 +34,17 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setLanguageState(lang);
   };
 
+  const getFontClass = () => {
+    switch (language) {
+      case 'hi':
+        return 'font-hindi';
+      case 'mr':
+        return 'font-marathi';
+      default:
+        return 'font-sans';
+    }
+  };
+
   const t = (key: string): string => {
     const keys = key.split(".");
     let value: any = translations[language];
@@ -45,7 +57,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, getFontClass }}>
       {children}
     </LanguageContext.Provider>
   );

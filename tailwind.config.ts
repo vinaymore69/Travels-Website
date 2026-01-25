@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         'sans': ['Satoshi', 'system-ui', 'sans-serif'],
         'serif': ['Playfair Display', 'Georgia', 'serif'],
+        'hindi': ['Geom', 'Tiro Devanagari Marathi', 'Satoshi', 'system-ui', 'sans-serif'],
+        'marathi': ['Tiro Devanagari Marathi', 'Geom', 'Satoshi', 'system-ui', 'sans-serif'],
+        'indic': ['Geom', 'Tiro Devanagari Marathi', 'Satoshi', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "./ThemeProvider";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Footer = () => {
   const { theme, setTheme } = useTheme();
+  const { t } = useLanguage();
 
   return (
     <footer className="border-t border-border mt-24">
@@ -12,7 +14,7 @@ const Footer = () => {
             {/* Column 1: Theme Toggle */}
             <div className="flex flex-col gap-3">
               <h3 className="text-[1.4rem] tracking-wider mb-1">
-                Select a color scheme preference
+                {t("footer.themePreference")}
               </h3>
               <div className="flex gap-6">
                 <button
@@ -24,7 +26,7 @@ const Footer = () => {
                   }`}
                   aria-label="Light mode"
                 >
-                  Light
+                  {t("footer.light")}
                 </button>
                 <button
                   onClick={() => setTheme("dark")}
@@ -35,7 +37,7 @@ const Footer = () => {
                   }`}
                   aria-label="Dark mode"
                 >
-                  Dark
+                  {t("footer.dark")}
                 </button>
                 <button
                   onClick={() => setTheme("system")}
@@ -46,7 +48,7 @@ const Footer = () => {
                   }`}
                   aria-label="System theme"
                 >
-                  Auto
+                  {t("footer.auto")}
                 </button>
               </div>
             </div>
@@ -57,19 +59,19 @@ const Footer = () => {
                 to="/about"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                About
+                {t("footer.about")}
               </Link>
               <Link
                 to="/faq"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                FAQ
+                {t("footer.faq")}
               </Link>
               <Link
                 to="/contact"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                Contact
+                {t("footer.contact")}
               </Link>
             </nav>
 
@@ -79,16 +81,16 @@ const Footer = () => {
                 to="/privacy"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                Privacy Policy
+                {t("footer.privacy")}
               </Link>
               <Link
                 to="/terms"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                Terms & Conditions
+                {t("footer.terms")}
               </Link>
               <p className="text-[1.4rem] text-muted-foreground">
-                © Shree MKB Tours & Travels 2025
+                {t("footer.copyright")}
               </p>
             </nav>
 
@@ -100,7 +102,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                Facebook
+                {t("footer.facebook")}
               </a>
               <a
                 href="https://twitter.com"
@@ -108,7 +110,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                Twitter
+                {t("footer.twitter")}
               </a>
               <a
                 href="https://www.instagram.com/carwale_marathi"
@@ -116,7 +118,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                Instagram
+                {t("footer.instagram")}
               </a>
             </nav>
           </div>

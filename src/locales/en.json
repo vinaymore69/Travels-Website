@@ -1,10 +1,17 @@
 {
   "header": {
+    "companyName": "Shree MKB Tours & Travels",
     "home": "Home",
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "menu": "Menu",
+    "close": "Close",
+    "email": "Email",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
   "footer": {
     "description": "Your trusted partner for memorable journeys across India. We specialize in personalized tours, ensuring comfort and unforgettable experiences.",
@@ -15,9 +22,18 @@
     "contact": "Contact",
     "legalLinks": "Legal",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
+    "terms": "Terms & Conditions",
     "followUs": "Follow Us",
-    "copyright": "© 2026 MKB Tours & Travel. All rights reserved."
+    "copyright": "© Shree MKB Tours & Travels 2025",
+    "companyName": "Shree MKB Tours & Travels",
+    "themePreference": "Select a color scheme preference",
+    "light": "Light",
+    "dark": "Dark",
+    "auto": "Auto",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "faq": "FAQ"
   },
   "about": {
     "title": "About",
