@@ -44,12 +44,12 @@ All colors MUST be HSL.
 
     --radius: 1.2rem;
 
-    /* Lifestyle editorial tokens */
-    --editorial-text: 220 20% 15%;
-    --editorial-text-light: 220 15% 45%;
-    --editorial-tag: 217 100% 65%;
-    --editorial-tag-bg: 217 100% 95%;
-    --editorial-hover: 217 100% 98%;
+    /* Travel website theme tokens */
+    --travel-text: 220 20% 15%;
+    --travel-text-light: 220 15% 45%;
+    --travel-tag: 217 100% 65%;
+    --travel-tag-bg: 217 100% 95%;
+    --travel-hover: 217 100% 98%;
     
     /* Gradient definitions */
     --gradient-primary: linear-gradient(135deg, hsl(217 100% 65%), hsl(320 98% 74%));
@@ -100,11 +100,11 @@ All colors MUST be HSL.
     --input: 220 20% 20%;
     --ring: 217 100% 70%;
 
-    --editorial-text: 220 15% 92%;
-    --editorial-text-light: 220 15% 65%;
-    --editorial-tag: 217 100% 70%;
-    --editorial-tag-bg: 217 40% 20%;
-    --editorial-hover: 220 20% 12%;
+    --travel-text: 220 15% 92%;
+    --travel-text-light: 220 15% 65%;
+    --travel-tag: 217 100% 70%;
+    --travel-tag-bg: 217 40% 20%;
+    --travel-hover: 220 20% 12%;
     
     --gradient-primary: linear-gradient(135deg, hsl(217 100% 70%), hsl(320 98% 80%));
     --gradient-hero: linear-gradient(135deg, hsl(217 100% 70%) 0%, hsl(215 86% 75%) 30%, hsl(320 98% 80%) 60%, hsl(27 100% 60%) 100%);

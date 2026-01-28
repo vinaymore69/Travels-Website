@@ -208,6 +208,18 @@ const getArticleContent = (slug: string, language: string) => {
       hi: adventureHi,
       mr: adventureMr,
     },
+      "family-tour-review": {
+        en: require("@/locales/articles/en/family-tour-review.json"),
+      },
+      "pilgrimage-tour-review": {
+        en: require("@/locales/articles/en/pilgrimage-tour-review.json"),
+      },
+      "hill-station-review": {
+        en: require("@/locales/articles/en/hill-station-review.json"),
+      },
+      "travel-service-review": {
+        en: require("@/locales/articles/en/travel-service-review.json"),
+      },
   };
 
   return contentMap[slug]?.[language] || null;
@@ -289,6 +301,58 @@ const articlesData: Record<string, any> = {
       </>
     ),
   },
+    "family-tour-review": {
+      title: "Family Tour Review",
+      date: "2026-01-29",
+      author: {
+        name: "MKB Tours & Travels",
+        title: "Customer",
+        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+      },
+      heroImage: blog1,
+      heroAlt: "Family Tour Review",
+      tag: "Review",
+      content: null,
+    },
+    "pilgrimage-tour-review": {
+      title: "Pilgrimage Tour Review",
+      date: "2026-01-29",
+      author: {
+        name: "MKB Tours & Travels",
+        title: "Customer",
+        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+      },
+      heroImage: blog2,
+      heroAlt: "Pilgrimage Tour Review",
+      tag: "Review",
+      content: null,
+    },
+    "hill-station-review": {
+      title: "Hill Station Tour Review",
+      date: "2026-01-29",
+      author: {
+        name: "MKB Tours & Travels",
+        title: "Customer",
+        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+      },
+      heroImage: blog3,
+      heroAlt: "Hill Station Tour Review",
+      tag: "Review",
+      content: null,
+    },
+    "travel-service-review": {
+      title: "Travel Service Review",
+      date: "2026-01-29",
+      author: {
+        name: "MKB Tours & Travels",
+        title: "Customer",
+        avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+      },
+      heroImage: blog4,
+      heroAlt: "Travel Service Review",
+      tag: "Review",
+      content: null,
+    },
   "mahabaleshwar-tour": {
     titleKey: "blog.destinations.mahabaleshwar.title",
     title: "Mahabaleshwar: Maharashtra's Crown Jewel of Hill Stations",

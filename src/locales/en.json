@@ -6,6 +6,7 @@
     "services": "Services",
     "contact": "Contact",
     "faq": "FAQ",
+    "cars": "Cars",
     "menu": "Menu",
     "close": "Close",
     "email": "Email",
@@ -37,7 +38,7 @@
   },
   "about": {
     "title": "About",
-    "heroAlt": "Editorial Team",
+    "heroAlt": "Shree MKB Tours & Travels Team",
     "storyTitle": "Our Story",
     "storyPara1": "MKB Tours & Travel was founded with a vision to make every journey comfortable, safe, and memorable. Based in Mumbai, we have been serving travelers across India for over 5 years with reliable transportation and customized tour packages.",
     "storyPara2": "From hill stations and beach holidays to spiritual pilgrimages and heritage tours, we design each trip with personal care, professional drivers, and well-maintained vehicles to ensure a smooth travel experience.",

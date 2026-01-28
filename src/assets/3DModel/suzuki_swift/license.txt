@@ -1,0 +1,11 @@
+Model Information:
+* title:	2022 Suzuki Swift
+* source:	https://sketchfab.com/3d-models/2022-suzuki-swift-ee9bcbc912e6455cbe10a63ff89edd0a
+* author:	tonielpro520 (https://sketchfab.com/tonielpro520)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2022 Suzuki Swift" (https://sketchfab.com/3d-models/2022-suzuki-swift-ee9bcbc912e6455cbe10a63ff89edd0a) by tonielpro520 (https://sketchfab.com/tonielpro520) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,24 @@
+{
+  "title": "Travel Service Review",
+  "author": "MKB Tours & Travels",
+  "date": "2026-01-29",
+  "summary": "Professional and reliable travel services for all needs.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "text": "MKB Tours & Travels provided us with excellent travel services for our recent trip. Everything was handled professionally."
+    },
+    {
+      "heading": "Highlights",
+      "text": "From booking to execution, the process was smooth. The staff was responsive and helpful at every step."
+    },
+    {
+      "heading": "Service",
+      "text": "Vehicles were clean and comfortable. Drivers were punctual and courteous."
+    },
+    {
+      "heading": "Conclusion",
+      "text": "We will definitely use MKB Tours & Travels again for our future travel needs."
+    }
+  ]
+}
