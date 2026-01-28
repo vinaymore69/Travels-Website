@@ -52,8 +52,33 @@ cars.forEach(c => useGLTF.preload(c.path));
 export default function CarShowroom() {
   const [index, setIndex] = useState(0);
   const [showSpecs, setShowSpecs] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const currentCar = cars[index];
+
+  const handleCarChange = (newIndex: number) => {
+    if (isTransitioning) return; // Prevent multiple clicks during transition
+    
+    setIsTransitioning(true);
+    setShowSpecs(false); // Hide specs during transition
+    
+    // Wait for fade out animation
+    setTimeout(() => {
+      setIndex(newIndex);
+      // Wait a bit then fade in
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 100);
+    }, 400);
+  };
+
+  const handlePrevious = () => {
+    handleCarChange((index - 1 + cars.length) % cars.length);
+  };
+
+  const handleNext = () => {
+    handleCarChange((index + 1) % cars.length);
+  };
 
   return (
     <div className="relative w-full min-h-screen flex flex-col bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 font-sans">
@@ -65,9 +90,9 @@ export default function CarShowroom() {
       <div className="relative w-full h-screen overflow-hidden">
       
         {/* Animated gradient overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-800/20 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-zinc-800/10 via-transparent to-transparent pointer-events-none" />
-        
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(16,19,24,0.8),_transparent_70%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(16,19,24,0.6),_transparent_70%)] pointer-events-none" />
+
         {/* Noise texture overlay */}
         <div className="absolute inset-0 opacity-[0.015] pointer-events-none mix-blend-overlay"
              style={{
@@ -77,8 +102,10 @@ export default function CarShowroom() {
              }}
         />
 
-        {/* Car Title Header - Moved down to avoid website header overlap */}
-        <header className="absolute top-24 left-0 right-0 z-20 px-12 py-6 flex justify-between items-start">
+        {/* Car Title Header - With fade transition */}
+        <header className={`absolute top-24 left-0 right-0 z-20 px-12 py-6 flex justify-between items-start transition-all duration-500 ${
+          isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+        }`}>
           <div>
             <h1 className="text-7xl font-light tracking-tight text-white mb-2 drop-shadow-2xl">
               {currentCar.name}
@@ -97,27 +124,31 @@ export default function CarShowroom() {
           </div>
         </header>
 
-        {/* 3D Canvas */}
-        <Canvas
-          camera={{ position: [4, 2, 6], fov: 50 }}
-          className="w-full h-full"
-        >
-          <Suspense fallback={null}>
-            <ambientLight intensity={0.5} />
-            <spotLight position={[10, 15, 10]} angle={0.3} penumbra={1} intensity={1.5} castShadow />
-            <spotLight position={[-10, 10, -10]} angle={0.3} penumbra={1} intensity={0.8} />
-            <Car path={currentCar.path} />
-            <Environment preset="city" />
-          </Suspense>
-          <OrbitControls
-            enablePan={true}
-            enableZoom={true}
-            minPolarAngle={Math.PI / 4}
-            maxPolarAngle={Math.PI / 2}
-            minAzimuthAngle={-Math.PI / 4}
-            maxAzimuthAngle={Math.PI / 4}
-          />
-        </Canvas>
+        {/* 3D Canvas - With fade transition */}
+        <div className={`w-full h-full transition-all duration-500 ${
+          isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+        }`}>
+          <Canvas
+            camera={{ position: [4, 2, 6], fov: 50 }}
+            className="w-full h-full"
+          >
+            <Suspense fallback={null}>
+              <ambientLight intensity={0.5} />
+              <spotLight position={[10, 15, 10]} angle={0.3} penumbra={1} intensity={1.5} castShadow />
+              <spotLight position={[-10, 10, -10]} angle={0.3} penumbra={1} intensity={0.8} />
+              <Car path={currentCar.path} />
+              <Environment preset="city" />
+            </Suspense>
+            <OrbitControls
+              enablePan={true}
+              enableZoom={true}
+              minPolarAngle={Math.PI / 4}
+              maxPolarAngle={Math.PI / 2}
+              minAzimuthAngle={-Math.PI / 0}
+              maxAzimuthAngle={Math.PI / 4}
+            />
+          </Canvas>
+        </div>
 
         {/* Spec Overlay - Fade in when button clicked */}
         <div 
@@ -158,11 +189,13 @@ export default function CarShowroom() {
         <div className="absolute right-12 top-1/2 -translate-y-1/2 flex flex-col gap-6">
           {/* Left Arrow */}
           <button
-            onClick={() => setIndex((index - 1 + cars.length) % cars.length)}
+            onClick={handlePrevious}
+            disabled={isTransitioning}
             className="group relative w-16 h-16 flex items-center justify-center text-white text-4xl font-light
                        bg-zinc-900/60 backdrop-blur-md border border-zinc-700/30 rounded-full
                        hover:bg-zinc-800/80 hover:border-zinc-600/50 hover:scale-110 
-                       transition-all duration-300 shadow-xl hover:shadow-2xl"
+                       transition-all duration-300 shadow-xl hover:shadow-2xl
+                       disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
             <span className="transform group-hover:-translate-x-0.5 transition-transform duration-300">‹</span>
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -173,8 +206,9 @@ export default function CarShowroom() {
             {cars.map((_, i) => (
               <button
                 key={i}
-                onClick={() => setIndex(i)}
-                className={`transition-all duration-500 rounded-full ${
+                onClick={() => handleCarChange(i)}
+                disabled={isTransitioning}
+                className={`transition-all duration-500 rounded-full disabled:cursor-not-allowed ${
                   i === index
                     ? "w-2 h-8 bg-white shadow-lg shadow-white/20"
                     : "w-2 h-2 bg-zinc-600 hover:bg-zinc-400"
@@ -185,11 +219,13 @@ export default function CarShowroom() {
 
           {/* Right Arrow */}
           <button
-            onClick={() => setIndex((index + 1) % cars.length)}
+            onClick={handleNext}
+            disabled={isTransitioning}
             className="group relative w-16 h-16 flex items-center justify-center text-white text-4xl font-light
                        bg-zinc-900/60 backdrop-blur-md border border-zinc-700/30 rounded-full
                        hover:bg-zinc-800/80 hover:border-zinc-600/50 hover:scale-110 
-                       transition-all duration-300 shadow-xl hover:shadow-2xl"
+                       transition-all duration-300 shadow-xl hover:shadow-2xl
+                       disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
             <span className="transform group-hover:translate-x-0.5 transition-transform duration-300">›</span>
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -197,7 +233,9 @@ export default function CarShowroom() {
         </div>
 
         {/* View Specs Button - Inside car section */}
-        <div className="absolute bottom-8 left-0 right-0 px-12 flex justify-center items-end z-10">
+        <div className={`absolute bottom-[18vh] left-0 right-0 px-12 flex justify-center items-end z-10 transition-all duration-500 ${
+          isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+        }`}>
           <button 
             onClick={() => setShowSpecs(!showSpecs)}
             className="px-8 py-3 bg-white text-zinc-950 font-medium tracking-wider uppercase text-sm
@@ -209,7 +247,7 @@ export default function CarShowroom() {
       </div>
 
       {/* Website Footer - Smaller size */}
-      <div className="w-full bg-zinc-950">
+      <div className="w-full bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-200">
         <Footer />
       </div>
 
