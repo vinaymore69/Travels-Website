@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wagon R
+* source:	https://sketchfab.com/3d-models/wagon-r-5b436877cf24494380549f9851578cc3
+* author:	tk animations (https://sketchfab.com/tharun_kumar_d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wagon R" (https://sketchfab.com/3d-models/wagon-r-5b436877cf24494380549f9851578cc3) by tk animations (https://sketchfab.com/tharun_kumar_d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

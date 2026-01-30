@@ -39,6 +39,10 @@ import ajantaMr from "@/locales/articles/mr/ajanta.json";
 import kolhapurEn from "@/locales/articles/en/kolhapur.json";
 import kolhapurHi from "@/locales/articles/hi/kolhapur.json";
 import kolhapurMr from "@/locales/articles/mr/kolhapur.json";
+import familyTourReviewEn from "@/locales/articles/en/family-tour-review.json";
+import pilgrimageTourReviewEn from "@/locales/articles/en/pilgrimage-tour-review.json";
+import hillStationReviewEn from "@/locales/articles/en/hill-station-review.json";
+import travelServiceReviewEn from "@/locales/articles/en/travel-service-review.json";
 import rajmachiEn from "@/locales/articles/en/rajmachi.json";
 import rajmachiHi from "@/locales/articles/hi/rajmachi.json";
 import rajmachiMr from "@/locales/articles/mr/rajmachi.json";
@@ -209,16 +213,16 @@ const getArticleContent = (slug: string, language: string) => {
       mr: adventureMr,
     },
       "family-tour-review": {
-        en: require("@/locales/articles/en/family-tour-review.json"),
+        en: familyTourReviewEn,
       },
       "pilgrimage-tour-review": {
-        en: require("@/locales/articles/en/pilgrimage-tour-review.json"),
+        en: pilgrimageTourReviewEn,
       },
       "hill-station-review": {
-        en: require("@/locales/articles/en/hill-station-review.json"),
+        en: hillStationReviewEn,
       },
       "travel-service-review": {
-        en: require("@/locales/articles/en/travel-service-review.json"),
+        en: travelServiceReviewEn,
       },
   };
 

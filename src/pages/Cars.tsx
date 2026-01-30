@@ -1,4 +1,6 @@
 import React, { Suspense, useState } from "react";
+// SEO: Add meta tags for Cars page
+import { Helmet } from "react-helmet";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
 import Header from "../components/Header"; 
@@ -34,7 +36,39 @@ const cars = [
       fuelTank: "37 Litres",
       length: "3,845 mm"
     }
+  },
+  {
+  name: "Maruti Suzuki Wagon R",
+  path: "/3DModel/wagon_r/scene.gltf",
+  tagline: "Tall Boy, Big on Comfort",
+  specs: {
+    engine: "1.2L K12N Petrol",
+    power: "88 HP @ 6,000 rpm",
+    torque: "113 Nm @ 4,400 rpm",
+    transmission: "5-Speed Manual / AMT",
+    seating: "5 Seater",
+    mileage: "23.56 km/l",
+    fuelTank: "32 Litres",
+    length: "3,655 mm"
   }
+},
+{
+  name: "Toyota Innova Crysta",
+  path: "/3DModel/toyota_inova_crysta/scene.gltf",
+  tagline: "The Icon of Premium Mobility",
+  specs: {
+    engine: "2.4L Diesel",
+    power: "148 HP @ 3,400 rpm",
+    torque: "343 Nm @ 1,400–2,800 rpm",
+    transmission: "5-Speed Manual",
+    seating: "7 / 8 Seater",
+    mileage: "15.6 km/l",
+    fuelTank: "55 Litres",
+    length: "4,735 mm"
+  }
+}
+
+
 ];
 
 import { GLTF } from "three-stdlib";
@@ -81,7 +115,22 @@ export default function CarShowroom() {
   };
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 font-sans">
+    <>
+      <Helmet>
+        <title>Car for Travel in Mumbai | Tours and Travels | MKB Tours & Travels</title>
+        <meta name="description" content="Book a car for travel in Mumbai with MKB Tours & Travels. Reliable tours and travels service for airport transfers, city tours, outstation trips, and more. Best prices and comfortable rides." />
+        <meta name="keywords" content="car for travel in Mumbai, tours and travels, Mumbai car rental, travel agency Mumbai, airport transfer Mumbai, outstation car Mumbai, MKB Tours & Travels" />
+        <meta property="og:title" content="Car for Travel in Mumbai | Tours and Travels | MKB Tours & Travels" />
+        <meta property="og:description" content="Book a car for travel in Mumbai with MKB Tours & Travels. Reliable tours and travels service for airport transfers, city tours, outstation trips, and more." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mkb-tours-travels.vercel.app/cars" />
+        <meta property="og:image" content="/src/assets/logo/Logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Car for Travel in Mumbai | Tours and Travels | MKB Tours & Travels" />
+        <meta name="twitter:description" content="Book a car for travel in Mumbai with MKB Tours & Travels. Reliable tours and travels service for airport transfers, city tours, outstation trips, and more." />
+        <meta name="twitter:image" content="/src/assets/logo/Logo.png" />
+      </Helmet>
+      <div className="relative w-full min-h-screen flex flex-col bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 font-sans">
       
       {/* Website Header */}
       <Header />
@@ -270,5 +319,6 @@ export default function CarShowroom() {
         }
       `}</style>
     </div>
+    </>
   );
 }
