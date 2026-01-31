@@ -102,13 +102,13 @@ const articles = [
 const opinions = [
   {
     titleKey: "blog.opinions.family",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    avatar: "../src/assets/malmo/profile2.png",
     author: "Rohit Sharma",
     slug: "family-tour-review",
   },
   {
     titleKey: "blog.opinions.pilgrimage",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    avatar: "../src/assets/malmo/profile1.png",
     author: "Anita Deshmukh",
     slug: "pilgrimage-tour-review",
   },

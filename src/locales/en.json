@@ -36,25 +36,41 @@
     "instagram": "Instagram",
     "faq": "FAQ"
   },
-  "about": {
-    "title": "About",
-    "heroAlt": "Shree MKB Tours & Travels Team",
-    "storyTitle": "Our Story",
-    "storyPara1": "MKB Tours & Travel was founded with a vision to make every journey comfortable, safe, and memorable. Based in Mumbai, we have been serving travelers across India for over 5 years with reliable transportation and customized tour packages.",
-    "storyPara2": "From hill stations and beach holidays to spiritual pilgrimages and heritage tours, we design each trip with personal care, professional drivers, and well-maintained vehicles to ensure a smooth travel experience.",
-    "storyPara3": "Today, MKB Tours & Travel is trusted by 1000+ happy travelers, offering door-to-door pickup, flexible itineraries, 24/7 support, and premium service across Maharashtra, Goa, Gujarat, Karnataka, and beyond.",
-    "missionQuote": "Safe Journeys. Trusted Service. Memorable Experiences.",
-    "missionCaption": "Our Mission",
-    "valuesTitle": "Our Values",
-    "passionTitle": "Passion for Travel",
-    "passionDesc": "We love what we do, and it reflects in the care and attention we give to every journey we craft.",
-    "excellenceTitle": "Service Excellence",
-    "excellenceDesc": "From clean vehicles to professional drivers and well-planned itineraries, we deliver premium travel experiences.",
-    "customerTitle": "Customer First",
-    "customerDesc": "Your comfort, safety, and satisfaction are our highest priorities on every journey.",
-    "safetyTitle": "Safety & Trust",
-    "safetyDesc": "Verified drivers, well-maintained vehicles, and transparent pricing ensure a worry-free travel experience."
-  },
+ "about": {
+  "title": "About",
+  "heroAlt": "Shree MKB Tours & Travels Team and Fleet",
+
+  "storyTitle": "Our Story",
+  "storyPara1": "Shree MKB Tours & Travels was founded with a clear vision to make every journey comfortable, safe, and memorable. The company is owned and managed by Rushi Manohar Bhalekar, son of Manohar Keshav Bhalekar, after whom the company proudly carries the name MKB. Headquartered in Mumbai, we have been serving travelers across India for over 5 years with reliable transportation and thoughtfully curated tour solutions.",
+  
+  "storyPara2": "From scenic hill stations and beach holidays to spiritual pilgrimages, family vacations, corporate travel, and heritage tours, every journey is planned with personal attention to detail. Our focus on professional drivers, well-maintained vehicles, and transparent communication ensures a smooth, stress-free travel experience for every customer.",
+  
+  "storyPara3": "Today, Shree MKB Tours & Travels is trusted by 1000+ happy travelers for door-to-door pickup, flexible itineraries, and 24/7 customer support. Operating primarily from Mumbai, we provide premium travel services across Maharashtra, Goa, Gujarat, Karnataka, and beyond, with a strong commitment to safety, punctuality, and service excellence.",
+
+  "missionQuote": "Safe Journeys. Trusted Service. Memorable Experiences.",
+  "missionCaption": "Our Mission",
+
+  "valuesTitle": "Our Values",
+
+  "passionTitle": "Passion for Travel",
+  "passionDesc": "Travel is not just our business—it is our passion. We put genuine care into every journey, ensuring that each trip is thoughtfully planned and personally managed.",
+
+  "excellenceTitle": "Service Excellence",
+  "excellenceDesc": "We maintain high standards across our operations, from clean and comfortable vehicles to experienced drivers and well-organized itineraries, delivering consistent and premium travel experiences.",
+
+  "customerTitle": "Customer First",
+  "customerDesc": "Our customers are at the center of everything we do. Your comfort, safety, and satisfaction guide every decision we make, before, during, and after your journey.",
+
+  "safetyTitle": "Safety & Trust",
+  "safetyDesc": "Verified drivers, regularly maintained vehicles, transparent pricing, and dependable support ensure complete peace of mind while traveling with us.",
+
+  "bookletsTitle": "Our Booklets",
+  "bookletsDesc": "Download our detailed travel booklets available in three languages. Each booklet provides comprehensive information about destinations, tour packages, pricing, and travel options, allowing you to plan your journey conveniently—even offline.",
+
+  "carsPageNote": "Explore our Cars page to view the vehicles available in our fleet through interactive 3D models, giving you a clear and realistic view of the comfort and options we offer.",
+
+  "servicesPageNote": "Visit our Services page to discover the wide range of travel services we provide, including local and outstation travel, airport transfers, tour packages, corporate travel, and customized trip planning."
+},
   "contact": {
     "emoji": "✉️",
     "title": "We'd love to hear from you.",
