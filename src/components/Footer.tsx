@@ -68,10 +68,10 @@ const Footer = () => {
                 {t("footer.faq")}
               </Link>
               <Link
-                to="/contact"
+                to="/gallery"
                 className="text-[1.4rem] inline-block [transition:background-position_600ms_cubic-bezier(0.45,0,0.55,1)] bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:220%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0]"
               >
-                {t("footer.contact")}
+                {t("footer.gallery")}
               </Link>
             </nav>
 

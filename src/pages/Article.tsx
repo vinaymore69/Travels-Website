@@ -103,6 +103,10 @@ import blog16 from "@/assets/blog-16h.jpg";
 import blog17 from "@/assets/blog-17h.jpg";
 import blog18 from "@/assets/blog-18h.jpg";
 import malmoHero from "@/assets/malmo/main1.jpg";
+import profile1 from "@/assets/malmo/profile1.png";  // ← add
+import profile2 from "@/assets/malmo/profile2.png";  // ← add
+import profile3 from "@/assets/malmo/profile3.jpg";  // ← add
+import profile4 from "@/assets/malmo/profile4.png";  // ← add
 
 // Article content loader
 const getArticleContent = (slug: string, language: string) => {
@@ -360,8 +364,7 @@ const articlesData: Record<string, any> = {
     author: {
       name: "Anvesh Maniyar",
       title: "Customer",
-      avatar:
-        "../src/assets/malmo/profile2.png",
+      avatar: profile2
     },
     heroImage: blog1,
     heroAlt: "Family Tour Review",
@@ -432,7 +435,7 @@ const articlesData: Record<string, any> = {
     author: {
       name: "Vinay More",
       title: "Customer",
-      avatar: "../src/assets/malmo/profile1.png",
+      avatar: profile1
     },
     heroImage: blog2,
     heroAlt: "Pilgrimage Tour Review",
@@ -497,10 +500,10 @@ const articlesData: Record<string, any> = {
     title: "Hill Station Tour Review",
     date: "2026-01-29",
     author: {
-      name: "MKB Tours & Travels",
+      name: "Anita Bhalekar",
       title: "Customer",
       avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+        profile3,
     },
     heroImage: blog3,
     heroAlt: "Hill Station Tour Review",
@@ -562,10 +565,9 @@ const articlesData: Record<string, any> = {
     title: "Travel Service Review",
     date: "2026-01-29",
     author: {
-      name: "MKB Tours & Travels",
-      title: "Customer",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+      name: "Rushikesh Bhalekar",
+      title: "Owner",
+      avatar: profile4,
     },
     heroImage: blog4,
     heroAlt: "Travel Service Review",
@@ -3181,11 +3183,10 @@ const articlesData: Record<string, any> = {
     title: "Discover India: Customized Private Tours with MKB Tours & Travel",
     date: "January 25, 2026",
     author: {
-      name: "Rajesh Kulkarni",
+      name: "Rushikesh Bhalekar",
       titleKey: "article.author.travelWriter",
       title: "Tour Director",
-      avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+      avatar:profile4,
     },
     heroImage: malmoHero,
     heroAlt: "Beautiful Indian destinations",

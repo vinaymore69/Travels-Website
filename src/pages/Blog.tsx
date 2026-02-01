@@ -24,8 +24,12 @@ import blog15 from "@/assets/blog-15.jpg";
 import blog16 from "@/assets/blog-16.jpg";
 import blog17 from "@/assets/blog-17.jpg";
 import blog18 from "@/assets/blog-18.jpg";
-
+import profile4 from "@/assets/malmo/profile4.png";
+import profile3 from "@/assets/malmo/profile3.jpg";
+import profile2 from "@/assets/malmo/profile2.png";
+import profile1 from "@/assets/malmo/profile1.png";
 import malmoHero from "@/assets/malmo/malmo-hero.jpg";
+
 
 const Blog = () => {
   const articlesRef = useRef<(HTMLElement | null)[]>([]);
@@ -102,25 +106,25 @@ const articles = [
 const opinions = [
   {
     titleKey: "blog.opinions.family",
-    avatar: "../src/assets/malmo/profile2.png",
-    author: "Rohit Sharma",
+    avatar: profile2,
+    author: "Anvesh Maniyar",
     slug: "family-tour-review",
   },
   {
     titleKey: "blog.opinions.pilgrimage",
-    avatar: "../src/assets/malmo/profile1.png",
-    author: "Anita Deshmukh",
+    avatar:profile1,
+    author: "Vinay More",
     slug: "pilgrimage-tour-review",
   },
   {
     titleKey: "blog.opinions.hillStation",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
-    author: "Kunal Patil",
+    avatar: profile3,
+    author: "Anita Bhalekar",
     slug: "hill-station-review",
   },
   {
     titleKey: "blog.opinions.service",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    avatar: profile4,
     author: "Priya Kulkarni",
     slug: "travel-service-review",
   },
