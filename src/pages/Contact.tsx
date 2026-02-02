@@ -71,31 +71,24 @@ const Contact = () => {
                 <div className="space-y-3 mb-8">
                   <p className="text-[1.8rem]">
                     <a href="mailto:Shreemkb@gmail.com" className="hover:opacity-60 transition-opacity">
-                      
-Shreemkb@gmail.com
+                      Shreemkb@gmail.com
                     </a>
                   </p>
-                  <p className="text-[1.8rem]">
-                    <a href="tel:+918433894555" className="hover:opacity-60 transition-opacity">
-                      Rushikesh: +91 84338 94555
-                    </a>
-                    <br/>
-                     <a href="tel:+918169820906" className="hover:opacity-60 transition-opacity">
-                      Vikas:+91 81698 20906
-                    </a><br/>
-                     <a href="tel:+917700038840" className="hover:opacity-60 transition-opacity">
-                      Ramesh:+91 77000 38840
-                    </a><br/>
-                     <a href="tel:+919870687603" className="hover:opacity-60 transition-opacity">
-                      Sushant: +91 98706 87603
-                    </a><br/>
-                     <a href="tel:+917021596018" className="hover:opacity-60 transition-opacity">
-                      Raj: +91 70215 96018
-                    </a><br/>
-                       <a href="tel:+919833613079" className="hover:opacity-60 transition-opacity">
-                      Aniket: +91 98336 13079
-                    </a>
-                  </p>
+                  <div className="text-[1.8rem]">
+                    {[...(Array.isArray(t("contact.phones")) ? t("contact.phones") : [t("contact.phones")])].map((phone: string, idx: number) => {
+                      // Extract phone number for tel: link
+                      const match = phone.match(/([+०-९0-9 ]{10,})/);
+                      const number = match ? match[0].replace(/[^+०-९0-9]/g, "") : "";
+                      return (
+                        <span key={idx}>
+                          <a href={`tel:${number}`} className="hover:opacity-60 transition-opacity">
+                            {phone}
+                          </a>
+                          <br/>
+                        </span>
+                      );
+                    })}
+                  </div>
                 </div>
               </AppearOnScroll>
 

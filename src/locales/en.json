@@ -1,4 +1,219 @@
-{
+{  
+  "cars": [
+    {
+      "name": "Suzuki Ertiga",
+      "tagline": "The Family Adventure",
+      "specs": {
+        "engine": "1.5L K15B Petrol",
+        "power": "103 HP @ 6,000 rpm",
+        "torque": "138 Nm @ 4,400 rpm",
+        "transmission": "5-Speed Manual / 4-Speed AT",
+        "seating": "7 Seater",
+        "mileage": "19.01 km/l",
+        "fuelTank": "45 Litres",
+        "length": "4,395 mm"
+      }
+    },
+    {
+      "name": "Suzuki Swift",
+      "tagline": "Born to Perform",
+      "specs": {
+        "engine": "1.2L K12N Petrol",
+        "power": "89 HP @ 6,000 rpm",
+        "torque": "113 Nm @ 4,200 rpm",
+        "transmission": "5-Speed Manual / AMT",
+        "seating": "5 Seater",
+        "mileage": "22.38 km/l",
+        "fuelTank": "37 Litres",
+        "length": "3,845 mm"
+      }
+    },
+    {
+      "name": "Maruti Suzuki Wagon R",
+      "tagline": "Tall Boy, Big on Comfort",
+      "specs": {
+        "engine": "1.2L K12N Petrol",
+        "power": "88 HP @ 6,000 rpm",
+        "torque": "113 Nm @ 4,400 rpm",
+        "transmission": "5-Speed Manual / AMT",
+        "seating": "5 Seater",
+        "mileage": "23.56 km/l",
+        "fuelTank": "32 Litres",
+        "length": "3,655 mm"
+      }
+    },
+    {
+      "name": "Toyota Innova Crysta",
+      "tagline": "The Icon of Premium Mobility",
+      "specs": {
+        "engine": "2.4L Diesel",
+        "power": "148 HP @ 3,400 rpm",
+        "torque": "343 Nm @ 1,400–2,800 rpm",
+        "transmission": "5-Speed Manual",
+        "seating": "7 / 8 Seater",
+        "mileage": "15.6 km/l",
+        "fuelTank": "55 Litres",
+        "length": "4,735 mm"
+      }
+    }
+  ],
+ "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 10, 2025",
+    "content": [
+      "At MKB Tours & Travel, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and safeguard your data when you visit our website or use our services.",
+      "Information We Collect",
+      "Personal Information",
+      "We may collect personal details that you voluntarily provide, including but not limited to:",
+      "Full name",
+      "Phone number",
+      "Email address",
+      "Pickup and drop locations",
+      "Travel dates and preferences",
+      "Payment and billing details (for invoicing purposes)",
+      "This information is collected when you submit enquiry forms, request bookings, download our travel guide, or contact us through phone, email, or WhatsApp.",
+      "Automatically Collected Information",
+      "When you visit our website, we may automatically collect certain information about your device, including:",
+      "Browser type and version",
+      "Operating system",
+      "IP address",
+      "Pages visited and time spent on pages",
+      "Referring website addresses",
+      "How We Use Your Information",
+      "We use the information we collect to:",
+      "Process bookings and provide travel services",
+      "Contact you regarding enquiries, confirmations, and trip support",
+      "Send service updates and promotional offers (with your consent)",
+      "Improve our website, services, and customer experience",
+      "Maintain legal, accounting, and safety records",
+      "Detect, prevent, and address technical or security issues",
+      "Cookies and Tracking Technologies",
+      "We use cookies and similar tracking technologies to enhance website functionality and user experience. You can instruct your browser to refuse cookies or alert you when cookies are being sent. Some website features may not function properly if cookies are disabled.",
+      "Types of Cookies We Use",
+      "Essential Cookies: Required for website operation and booking forms",
+      "Analytics Cookies: Help us understand visitor behavior and improve services",
+      "Preference Cookies: Remember language, location, and display settings",
+      "Third-Party Services",
+      "We may use third-party service providers such as payment gateways, hosting services, and analytics tools to operate our website and manage bookings. These parties are granted access only for necessary functions and are bound by confidentiality obligations.",
+      "Data Security",
+      "We implement appropriate technical and organizational security measures to protect your personal information. While we strive to use commercially acceptable means to protect your data, no method of transmission over the internet is 100% secure.",
+      "Your Rights",
+      "You have the right to:",
+      "Access your personal information",
+      "Request correction of inaccurate data",
+      "Request deletion of your information (subject to legal requirements)",
+      "Withdraw consent for marketing communications",
+      "Request data portability where applicable",
+      "Children's Privacy",
+      "Our services are intended for users above 18 years of age. We do not knowingly collect personal information from minors.",
+      "International Data Transfers",
+      "Your data may be stored on servers located in India or other regions. We ensure appropriate safeguards are in place for secure data handling.",
+      "Changes to This Privacy Policy",
+      "We may update this Privacy Policy from time to time. Any changes will be posted on this page along with an updated revision date. We encourage you to review this page periodically.",
+      "Contact Us",
+      "If you have any questions regarding this Privacy Policy, please contact us:",
+      "By email: Shreemkb@gmail.com",
+      "By phone: +91 84338 94555",
+      "Through our contact page: /contact"
+    ]
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "lastUpdated": "Last updated: January 10, 2025",
+    "content": [
+      "Welcome to MKB Tours & Travel. By booking our services or using our website, you agree to be bound by the following Terms & Conditions. Please read them carefully before confirming your trip.",
+      "Important Notice",
+      "Kindly note that 5% GST is applicable for GST billing. All terms and conditions mentioned below are applicable for our outstation one-way and round-trip services.",
+      "Kilometre & Hour Limits",
+      "Each trip has a specific kilometre limit and, for certain packages, an hour limit. Any usage beyond these limits will be charged additionally as per applicable rates.",
+      "Airport Entry Charges",
+      "Airport entry charges, if applicable, are not included in the fare and must be paid extra by the customer.",
+      "Additional Charges",
+      "All tolls, parking fees, interstate taxes, and other government charges are not included in the fare and must be paid as per actuals.",
+      "Night Allowance",
+      "For travel between 9:45 PM and 6:00 AM, a night allowance will be applicable and payable directly to the driver.",
+      "Itinerary Planning",
+      "Customers must confirm all destinations and cities in advance. Changes or additions during the journey may not be possible and can result in extra charges.",
+      "Hill Station Travel",
+      "For safety and vehicle performance, air-conditioning may be switched off during steep hill climbs.",
+      "CNG Vehicles",
+      "To promote eco-friendly travel, your vehicle may run on CNG. Refueling stops may be required during the journey.",
+      "Pick-up & Drop Policy",
+      "The package includes one pick-up point and one drop point only. Local sightseeing or multiple drops within the city are not included unless specified.",
+      "Service Coverage",
+      "One-Way Trips",
+      "Ideal for single-destination travel with flexible pick-up and drop options across India.",
+      "Round Trips",
+      "Complete return journeys with customizable itineraries and multiple destination coverage.",
+      "Governing Law",
+      "These Terms & Conditions shall be governed and interpreted in accordance with the laws of India. Any disputes shall fall under the jurisdiction of Mumbai courts.",
+      "Changes to Terms",
+      "MKB Tours & Travel reserves the right to modify these Terms & Conditions at any time without prior notice. Updated terms will be posted on this page.",
+      "Contact Information",
+      "For any clarification regarding these Terms & Conditions, please contact us:",
+      "📞 +91 84338 94555",
+      "✉️ Shreemkb@gmail.com",
+      "Through our contact page: /contact"
+    ]
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Shree MKB Tours & Travel and how it works.",
+    "stillHaveQuestions": "Still have questions?",
+    "stillHaveQuestionsDesc": "Can't find the answer you're looking for? Feel free to reach out to our team.",
+    "contactUs": "Contact Us",
+    "questions": [
+      {
+        "question": "What is MKB Tours & Travel?",
+        "answer": "MKB Tours & Travel is a Mumbai-based travel company providing reliable cab services and customized tour packages across India, including hill stations, pilgrimage tours, beach holidays, and heritage trips."
+      },
+      {
+        "question": "What services do you offer?",
+        "answer": "We offer local rentals, airport transfers, outstation one-way and round trips, Mumbai Darshan, pilgrimage tours, and customized holiday packages with professional drivers and well-maintained vehicles."
+      },
+      {
+        "question": "Do you provide pickup and drop services?",
+        "answer": "Yes, we provide door-to-door pickup and drop services for all our local, outstation, airport, and tour packages."
+      },
+      {
+        "question": "Can I customize my travel itinerary?",
+        "answer": "Absolutely. We offer fully customizable travel packages based on your preferred destinations, travel dates, vehicle type, and budget."
+      },
+      {
+        "question": "What types of vehicles are available?",
+        "answer": "Our fleet includes Maruti Dzire, WagonR, Ertiga, Innova Crysta, and other comfortable vehicles suitable for individuals, families, and groups."
+      },
+      {
+        "question": "Are your drivers experienced and verified?",
+        "answer": "Yes, all our drivers are professionally trained, background-verified, and experienced in long-distance and city travel to ensure safety and comfort."
+      },
+      {
+        "question": "Do you provide 24/7 customer support?",
+        "answer": "Yes, our support team is available 24/7 to assist you with bookings, trip modifications, and emergency help during your journey."
+      },
+      {
+        "question": "Do you organize pilgrimage tours?",
+        "answer": "Yes, we specialize in pilgrimage tours to destinations such as Shirdi, Trimbakeshwar, Pandharpur, Bhimashankar, Shani Shingnapur, and other sacred places across Maharashtra and India."
+      },
+      {
+        "question": "Is advance booking required?",
+        "answer": "Advance booking is recommended, especially during weekends, holidays, and festival seasons, to ensure vehicle availability and best service."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept UPI, cash, and bank transfers. For corporate and long-distance bookings, advance payment may be required."
+      },
+      {
+        "question": "Do you provide GST invoices?",
+        "answer": "Yes, GST invoices are available on request. A 5% GST is applicable for GST billing as per government norms."
+      },
+      {
+        "question": "How can I contact MKB Tours & Travel?",
+        "answer": "You can call us at +91 84338 94555 or email us at Shreemkb@gmail.com for bookings, queries, and support."
+      }
+    ]
+  },
   "header": {
     "companyName": "Shree MKB Tours & Travels",
     "home": "Home",
@@ -37,6 +252,8 @@
     "faq": "FAQ"
   },
  "about": {
+    "bookletsTitle": "Downloadable Travel Booklets",
+    "bookletsDesc": "Get our free, beautifully designed travel booklets for your next journey. Download guides, tips, and destination highlights in PDF format to plan your trip with ease.",
   "title": "About",
   "heroAlt": "Shree MKB Tours & Travels Team and Fleet",
 
@@ -72,6 +289,14 @@
   "servicesPageNote": "Visit our Services page to discover the wide range of travel services we provide, including local and outstation travel, airport transfers, tour packages, corporate travel, and customized trip planning."
 },
   "contact": {
+    "phones": [
+      "Rushikesh: +91 84338 94555",
+      "Vikas: +91 81698 20906",
+      "Ramesh: +91 77000 38840",
+      "Sushant: +91 98706 87603",
+      "Raj: +91 70215 96018",
+      "Aniket: +91 98336 13079"
+    ],
     "emoji": "✉️",
     "title": "We'd love to hear from you.",
     "subtitle": "Have a question, suggestion, or collaboration idea? We're here to listen. Drop us a message and we'll get back to you as soon as possible.",
@@ -183,6 +408,7 @@
       "service": "Safe, Reliable & On-Time Service"
     },
     "destinations": {
+    "continueReading": "Continue reading",
       "matheran": {
         "title": "Matheran Hill Escape",
         "desc": "Peaceful hill station with toy train, viewpoints and zero-pollution zone."

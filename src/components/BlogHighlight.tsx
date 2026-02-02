@@ -8,15 +8,20 @@ interface BlogHighlightProps {
   className?: string;
 }
 
+import { useLanguage } from "../contexts/LanguageContext";
+
 export default function BlogHighlight({
   title,
   description,
-  linkText = "Continue reading",
+  linkText,
   href,
   imageSrc,
   imageAlt,
   className = "",
 }: BlogHighlightProps) {
+  const { t } = useLanguage();
+  // Use the correct translation key as per mr.json: blog.destinations.continueReading
+  const displayLinkText = linkText || t("blog.destinations.continueReading");
   return (
     <div
       className={`relative flex items-center justify-between flex-col lg:flex-row lg:w-full ${className}`}
@@ -54,7 +59,7 @@ export default function BlogHighlight({
             className="inline-block mt-[2rem] no-underline text-[1.8rem] font-bold cursor-pointer border-none bg-none appearance-none"
           >
             <span className="transition-[background-position,color] duration-500 ease-out bg-current [background-image:linear-gradient(90deg,rgba(203,48,223,0.5)_0%,rgba(254,44,85,0.5)_46%,hsl(var(--foreground))_54%,hsl(var(--foreground))_100%)] bg-[length:200%_100%] bg-[position:100%_0] bg-clip-text text-transparent hover:bg-[position:0%_0] inline-flex items-center gap-2">
-              {linkText}
+              {displayLinkText}
               <svg
                 height="8"
                 viewBox="0 0 27 8"

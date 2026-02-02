@@ -1,4 +1,5 @@
 import React, { Suspense, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 // SEO: Add meta tags for Cars page
 import { Helmet } from "react-helmet";
 import { Canvas } from "@react-three/fiber";
@@ -6,70 +7,15 @@ import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
 import Header from "../components/Header"; 
 import Footer from "../components/Footer";
 
-const cars = [
-  {
-    name: "Suzuki Ertiga",
-    path: "/3DModel/suzuki_ertiga/scene.gltf",
-    tagline: "The Family Adventure",
-    specs: {
-      engine: "1.5L K15B Petrol",
-      power: "103 HP @ 6,000 rpm",
-      torque: "138 Nm @ 4,400 rpm",
-      transmission: "5-Speed Manual / 4-Speed AT",
-      seating: "7 Seater",
-      mileage: "19.01 km/l",
-      fuelTank: "45 Litres",
-      length: "4,395 mm"
-    }
-  },
-  {
-    name: "Suzuki Swift",
-    path: "/3DModel/suzuki_swift/scene.gltf",
-    tagline: "Born to Perform",
-    specs: {
-      engine: "1.2L K12N Petrol",
-      power: "89 HP @ 6,000 rpm",
-      torque: "113 Nm @ 4,200 rpm",
-      transmission: "5-Speed Manual / AMT",
-      seating: "5 Seater",
-      mileage: "22.38 km/l",
-      fuelTank: "37 Litres",
-      length: "3,845 mm"
-    }
-  },
-  {
-  name: "Maruti Suzuki Wagon R",
-  path: "/3DModel/wagon_r/scene.gltf",
-  tagline: "Tall Boy, Big on Comfort",
-  specs: {
-    engine: "1.2L K12N Petrol",
-    power: "88 HP @ 6,000 rpm",
-    torque: "113 Nm @ 4,400 rpm",
-    transmission: "5-Speed Manual / AMT",
-    seating: "5 Seater",
-    mileage: "23.56 km/l",
-    fuelTank: "32 Litres",
-    length: "3,655 mm"
-  }
-},
-{
-  name: "Toyota Innova Crysta",
-  path: "/3DModel/toyota_inova_crysta/scene.gltf",
-  tagline: "The Icon of Premium Mobility",
-  specs: {
-    engine: "2.4L Diesel",
-    power: "148 HP @ 3,400 rpm",
-    torque: "343 Nm @ 1,400–2,800 rpm",
-    transmission: "5-Speed Manual",
-    seating: "7 / 8 Seater",
-    mileage: "15.6 km/l",
-    fuelTank: "55 Litres",
-    length: "4,735 mm"
-  }
-}
 
-
+// Car 3D model paths (order must match translation data)
+const carModelPaths = [
+  "/3DModel/suzuki_ertiga/scene.gltf",
+  "/3DModel/suzuki_swift/scene.gltf",
+  "/3DModel/wagon_r/scene.gltf",
+  "/3DModel/toyota_inova_crysta/scene.gltf"
 ];
+
 
 import { GLTF } from "three-stdlib";
 import * as THREE from "three";
@@ -81,14 +27,25 @@ const Car = ({ path }: { path: string }) => {
   return <primitive object={clonedScene} />;
 };
 
-cars.forEach(c => useGLTF.preload(c.path));
+
+// We'll preload all car models for smooth experience
+carModelPaths.forEach(path => useGLTF.preload(path));
+
 
 export default function CarShowroom() {
+  const { t } = useLanguage();
+  // Get cars data from translations
+  const cars = t("cars");
   const [index, setIndex] = useState(0);
   const [showSpecs, setShowSpecs] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const currentCar = cars[index];
+  // Attach 3D model path to each car (order must match)
+  const carsWithPath = Array.isArray(cars)
+    ? cars.map((car, i) => ({ ...car, path: carModelPaths[i] }))
+    : [];
+
+  const currentCar = carsWithPath[index] || {};
 
   const handleCarChange = (newIndex: number) => {
     if (isTransitioning) return; // Prevent multiple clicks during transition
@@ -212,7 +169,7 @@ export default function CarShowroom() {
             </h3>
             
             <div className="space-y-5">
-              {Object.entries(currentCar.specs).map(([key, value], idx) => (
+              {currentCar.specs && Object.entries(currentCar.specs).map(([key, value], idx) => (
                 <div 
                   key={key}
                   className="flex justify-between items-baseline border-b border-zinc-800/50 pb-3 transition-all duration-500"
@@ -226,7 +183,7 @@ export default function CarShowroom() {
                     {key.replace(/([A-Z])/g, ' $1').trim()}
                   </span>
                   <span className="text-white font-light text-base tracking-wide ml-4 text-right">
-                    {value}
+                    {String(value)}
                   </span>
                 </div>
               ))}
@@ -252,7 +209,7 @@ export default function CarShowroom() {
 
           {/* Dots Indicator */}
           <div className="flex flex-col gap-3 items-center py-2">
-            {cars.map((_, i) => (
+            {carsWithPath.map((_, i) => (
               <button
                 key={i}
                 onClick={() => handleCarChange(i)}

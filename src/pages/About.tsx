@@ -6,6 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Sparkles, Palette, Heart, Users, FileText, Download } from "lucide-react";
 import { useState } from "react";
 
+import hero from "@/assets/malmo/about.jpg";
 
  const booklets = [
   {
@@ -123,7 +124,7 @@ const About = () => {
         <figure className="relative flex overflow-hidden w-full mt-[3rem] md:mt-[4.5rem] lg:mt-[6rem] mb-[6rem] md:mb-[9rem] lg:mb-[12rem]">
           <picture className="flex w-full justify-center">
             <img
-              src="src/assets/malmo/about.jpg"
+              src={hero}
               alt={t("about.heroAlt")}
               className="top-0 left-0 max-w-full w-full aspect-[2/1] xl:aspect-[16/5] object-cover"
             />

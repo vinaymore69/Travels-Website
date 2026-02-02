@@ -102,11 +102,11 @@ import blog15 from "@/assets/blog-15h.jpg";
 import blog16 from "@/assets/blog-16h.jpg";
 import blog17 from "@/assets/blog-17h.jpg";
 import blog18 from "@/assets/blog-18h.jpg";
-import malmoHero from "@/assets/malmo/main1.jpg";
-import profile1 from "@/assets/malmo/profile1.png";  // ← add
-import profile2 from "@/assets/malmo/profile2.png";  // ← add
-import profile3 from "@/assets/malmo/profile3.jpg";  // ← add
-import profile4 from "@/assets/malmo/profile4.png";  // ← add
+import malmoHero from "@/assets/malmo/about1.jpeg";
+import profile1 from "@/assets/malmo/profile1.png";  
+import profile2 from "@/assets/malmo/profile2.png";  
+import profile3 from "@/assets/malmo/profile3.jpg"; 
+import profile4 from "@/assets/malmo/profile4.png";  
 
 // Article content loader
 const getArticleContent = (slug: string, language: string) => {
