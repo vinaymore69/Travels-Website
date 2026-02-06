@@ -310,7 +310,10 @@
     "emailPlaceholder": "Email",
     "messagePlaceholder": "Message",
     "toastTitle": "Message sent!",
-    "toastDescription": "We'll get back to you as soon as possible."
+    "toastDescription": "We'll get back to you as soon as possible.",
+    "toastErrorTitle": "Message failed!",
+    "toastErrorDescription": "Something went wrong. Please try again later.",
+    "emailSubject": "Shree MKB Tours & Travels - Official Communication"
   },
   "services": {
     "title": "Our Services",
